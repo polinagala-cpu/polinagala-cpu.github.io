@@ -98,7 +98,7 @@
         <h2 id="s2">Задача, ограничения и&nbsp;роль</h2>
       </div>
       <div class="case-section__body">
-        <div class="trio"><div class="trio__item"><h3>Задача</h3><p>Понять, почему визуально готовый продукт создаёт разработчикам столько проблем, и&nbsp;пересобрать его&nbsp;в&nbsp;систему. Задача была не&nbsp;«навести красоту», а&nbsp;убрать причину расхождений.</p></div><div class="trio__item"><h3>Ограничения</h3><ul><li>Разработку нельзя было останавливать: продукт параллельно выпускал фичи</li><li>Ресурсы студии ограничены, приоритеты менялись</li><li>Визуальный стиль уже&nbsp;сложился, менять его&nbsp;не&nbsp;требовалось</li></ul></div><div class="trio__item"><h3>Моя роль</h3><p>Отвечала за&nbsp;<span class="nowrap">дизайн-систему</span> и&nbsp;веб- и&nbsp;мобильные интерфейсы, участвовала в&nbsp;приоритизации фич. Визуальную концепцию и&nbsp;<span class="nowrap">UI-kit</span> до&nbsp;меня создала команда, моя часть работы&nbsp;— структурная пересборка.</p></div></div>
+        <div class="trio"><div class="trio__item"><h3>Задача</h3><p>Понять, почему визуально готовый продукт создаёт разработчикам столько проблем, и&nbsp;пересобрать его&nbsp;в&nbsp;систему, которая убирает причину расхождений между макетами.</p></div><div class="trio__item"><h3>Ограничения</h3><ul><li>Разработку нельзя было останавливать: продукт параллельно выпускал фичи</li><li>Ресурсы студии ограничены, приоритеты менялись</li><li>Визуальный стиль уже&nbsp;сложился, менять его&nbsp;не&nbsp;требовалось</li></ul></div><div class="trio__item"><h3>Моя роль</h3><p>Отвечала за&nbsp;<span class="nowrap">дизайн-систему</span> и&nbsp;веб- и&nbsp;мобильные интерфейсы, участвовала в&nbsp;приоритизации фич. Визуальную концепцию и&nbsp;<span class="nowrap">UI-kit</span> до&nbsp;меня создала команда, на&nbsp;мне&nbsp;была структурная пересборка.</p></div></div>
       </div>
     </section>
     <section class="case-section" aria-labelledby="s3">
@@ -108,7 +108,7 @@
       </div>
       <div class="case-section__body">
           <dl class="def-list"><div class="def-list__row"><dt>Аудит Figma</dt><dd>Сколько экранов реально дублируют логику, какие компоненты повторяются чаще всего, где&nbsp;состояния задокументированы, а&nbsp;где&nbsp;их&nbsp;додумывают на&nbsp;глаз.</dd></div><div class="def-list__row"><dt>Анализ 18&nbsp;<span class="nowrap">таск-трекеров</span></dt><dd>Вместе с&nbsp;командой разобрали ClickUp, Wrike, Asana, Notion, Monday, Jira, Trello и&nbsp;другие, чтобы понять нужный продукту уровень системности.</dd></div><div class="def-list__row"><dt>Обратная связь разработки</dt><dd>Разработчики получали макеты, которые противоречили друг другу. Каждое изменение приходилось вручную вносить в&nbsp;десяти местах.</dd></div></dl>
-          <div class="insights-block"><h3 class="subhead">Что&nbsp;выяснилось</h3><ul class="insights"><li class="insight"><strong>Проблема не&nbsp;в&nbsp;экранах</strong><p>Не&nbsp;хватало договорённости между дизайном и&nbsp;разработкой о&nbsp;поведении каждого элемента. Без&nbsp;неё любое визуальное решение одноразовое.</p></li><li class="insight"><strong>«Такой&nbsp;же» компонент вёл себя <span class="nowrap">по-разному</span></strong><p>Физически это&nbsp;были разные слои, а&nbsp;не&nbsp;один компонент с&nbsp;вариантами.</p></li><li class="insight"><strong>Продукт живёт не&nbsp;в&nbsp;одном размере</strong><p>Макеты существовали в&nbsp;одном брейкпоинте, и&nbsp;на&nbsp;промежуточных размерах вёрстка ломалась.</p></li></ul></div>
+          <div class="insights-block"><h3 class="subhead">Что&nbsp;выяснилось</h3><ul class="insights"><li class="insight"><strong>Нет договорённости о&nbsp;поведении элементов</strong><p>Дизайн и&nbsp;разработка не&nbsp;договорились, как&nbsp;ведёт себя каждый элемент. Без&nbsp;этого любое визуальное решение одноразовое.</p></li><li class="insight"><strong>«Такой&nbsp;же» компонент вёл себя <span class="nowrap">по-разному</span></strong><p>Физически это&nbsp;были разные слои, а&nbsp;не&nbsp;один компонент с&nbsp;вариантами.</p></li><li class="insight"><strong>Продукт открывают на&nbsp;разных экранах</strong><p>Макеты существовали в&nbsp;одном брейкпоинте, и&nbsp;на&nbsp;промежуточных размерах вёрстка ломалась.</p></li></ul></div>
       </div>
     </section>
     <section class="case-section" aria-labelledby="s4">
@@ -133,7 +133,7 @@
               </div>
               <div class="step step--why">
                 <div class="step__label">Почему так</div>
-                <div class="step__body">Это&nbsp;снимает причину, а&nbsp;не&nbsp;следствие. Забыть состояние становится физически невозможно: оно либо есть в&nbsp;компоненте, либо экран не&nbsp;собрать.</div>
+                <div class="step__body">Забыть состояние становится невозможно: оно либо есть в&nbsp;компоненте, либо экран не&nbsp;собрать.</div>
               </div>
             </div>
             <div class="gallery"><figure class="figure figure--wide">
@@ -180,7 +180,7 @@
               </div>
               <div class="step step--solution">
                 <div class="step__label">Решение</div>
-                <div class="step__body">Правило: каждая новая фича сразу заходит в&nbsp;систему компонентов, а&nbsp;не&nbsp;порождает новое одноразовое решение.</div>
+                <div class="step__body">Правило: каждая новая фича сразу собирается из&nbsp;компонентов системы.</div>
               </div>
               <div class="step step--result">
                 <div class="step__label">Итог</div>
@@ -204,11 +204,11 @@
               </div>
               <div class="step step--why">
                 <div class="step__label">Почему так</div>
-                <div class="step__body">В&nbsp;живой системе цена ошибки выше, чем&nbsp;на&nbsp;этапе обсуждения. Система оказалась не&nbsp;только про&nbsp;визуал, но&nbsp;и&nbsp;про&nbsp;логику взаимодействия.</div>
+                <div class="step__body">Ошибку в&nbsp;логике взаимодействия дешевле поймать на&nbsp;обсуждении, чем&nbsp;в&nbsp;живой системе.</div>
               </div>
               <div class="step step--result">
                 <div class="step__label">Итог</div>
-                <div class="step__body">Фича не&nbsp;реализована, и&nbsp;это&nbsp;осознанный выбор, а&nbsp;не&nbsp;недоделка.</div>
+                <div class="step__body">Группировку оставили по&nbsp;проекту, по&nbsp;приоритету или&nbsp;без&nbsp;группы. По&nbsp;тегам её&nbsp;делать не&nbsp;стали.</div>
               </div>
             </div>
             <figure class="figure figure--wide">
@@ -255,7 +255,7 @@
       </div>
       <div class="case-section__body">
           <div class="prose callout">
-            <p>Самое ценное, что&nbsp;я&nbsp;вынесла из&nbsp;Taskee: <span class="nowrap">кросс-командная</span> коммуникация решает больше, чем&nbsp;ещё&nbsp;один раунд <span class="nowrap">дизайн-ревью</span> в&nbsp;одиночку. Обсуждение системных решений с&nbsp;разработчиками до&nbsp;передачи в&nbsp;работу, как&nbsp;было с&nbsp;канбаном, ловило структурные проблемы раньше, чем&nbsp;они становились дорогими.</p>
+            <p>Из&nbsp;Taskee я&nbsp;вынесла, что&nbsp;разговор с&nbsp;разработкой находит больше проблем, чем&nbsp;ещё&nbsp;один раунд <span class="nowrap">дизайн-ревью</span> в&nbsp;одиночку. Когда мы&nbsp;обсуждали системные решения с&nbsp;разработчиками до&nbsp;передачи в&nbsp;работу, как&nbsp;с&nbsp;канбаном, структурные проблемы всплывали раньше, чем&nbsp;становились дорогими.</p>
             <p><strong>Что&nbsp;сделала&nbsp;бы&nbsp;иначе.</strong> Закладывала&nbsp;бы&nbsp;токены и&nbsp;переменные сразу при&nbsp;первой пересборке компонентов, а&nbsp;не&nbsp;отдельным этапом позже. Тогда масштабирование на&nbsp;5&nbsp;брейкпоинтов потребовало&nbsp;бы&nbsp;меньше ручной синхронизации задним числом. Я&nbsp;увидела это&nbsp;только в&nbsp;середине процесса.</p>
           </div>
           <figure class="figure figure--wide figure--yt">
@@ -277,7 +277,7 @@
         </a>
         <a class="case-nav__link case-nav__link--next" href="nobetek.html" rel="next">
           <span class="case-nav__dir">Следующий кейс<svg width="20" height="20" viewBox="-1 -1 20 20" fill="none" aria-hidden="true"><path d="M10.125 14.625L15.75 9L10.125 3.375M15.75 9H2.25" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
-          <span class="case-nav__title"><span class="nowrap">E-commerce</span>, который помогает выбрать плитку, а&nbsp;не&nbsp;просто показывает каталог</span>
+          <span class="case-nav__title"><span class="nowrap">E-commerce</span> для&nbsp;завода плитки: расчёт в&nbsp;карточке товара вместо корзины</span>
         </a>
       </div>
       <a class="btn" href="index.html#work">Все&nbsp;кейсы</a>
