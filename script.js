@@ -10,6 +10,7 @@
     links.setAttribute('data-open', String(open));
     toggle.setAttribute('aria-expanded', String(open));
     toggle.setAttribute('aria-label', open ? 'Закрыть меню' : 'Открыть меню');
+    document.body.classList.toggle('menu-open', open);
   }
 
   if (toggle && links) {
@@ -25,7 +26,7 @@
         toggle.focus();
       }
     });
-    window.matchMedia('(min-width: 768px)').addEventListener('change', function (mq) {
+    window.matchMedia('(min-width: 1024px)').addEventListener('change', function (mq) {
       if (mq.matches) setMenu(false);
     });
   }
