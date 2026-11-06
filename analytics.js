@@ -7,6 +7,7 @@
   var settingsButton = document.getElementById('analytics-settings');
   var status = document.getElementById('analytics-status');
   var started = false;
+  var returnFocusToSettings = false;
 
   function getChoice() {
     try { return window.localStorage.getItem(CONSENT_KEY); }
@@ -60,7 +61,10 @@
     });
   }
 
-  if (settingsButton) settingsButton.addEventListener('click', openPanel);
+  if (settingsButton) settingsButton.addEventListener('click', function () {
+    returnFocusToSettings = true;
+    openPanel();
+  });
 
   if (panel) {
     panel.querySelectorAll('[data-analytics-choice]').forEach(function (button) {
@@ -72,7 +76,11 @@
         panel.hidden = true;
         if (accepted) startCounter();
         if (status) status.textContent = accepted ? 'Выбор сохранён.' : 'Аналитика отключена.';
-        if (settingsButton) settingsButton.focus();
+        if (returnFocusToSettings && settingsButton) {
+          try { settingsButton.focus({ preventScroll: true }); }
+          catch (error) { settingsButton.focus(); }
+        }
+        returnFocusToSettings = false;
       });
     });
   }
